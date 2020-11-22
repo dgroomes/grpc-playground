@@ -1,6 +1,6 @@
 # node
 
-A working example using gRPC in Node.js and JavaScript.
+A working example of client- and server-side JavaScript (Node.js) programs that communicate over gRPC.
 
 This was inspired from the [official gRPC example for Node.js](https://github.com/grpc/grpc/tree/master/examples/node)
 but significantly diverges because it uses the `protoc` compiler plugin extension mechanism directly instead of using
@@ -59,3 +59,4 @@ Detailed instructions to build and run the server program and client program. (N
 General clean ups, TODOs and things I wish to implement for this project:
 
 * Extend the example to something more complex than an echo server. Have a complex type.
+* I wish the Node.js/JavaScript `protoc` compiler plugin was distributed so we wouldn't have to build it from source.

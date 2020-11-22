@@ -17,7 +17,7 @@ The sub-projects include:
 
 ### `node/`
 
-A working example using gRPC in Node.js and JavaScript.
+A working example of client- and server-side JavaScript (Node.js) programs that communicate over gRPC.
 
 See [node/README.md](node/README.md).
 
