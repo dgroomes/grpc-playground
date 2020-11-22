@@ -1,0 +1,13 @@
+{
+  "name": "grpc-playground",
+  "version": "1.0.0",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dgroomes/grpc-playground.git"
+  },
+  "dependencies": {
+    "google-protobuf": "^3.14.0",
+    "@grpc/grpc-js": "^1.2.1"
+  }
+}
