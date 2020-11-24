@@ -10,7 +10,8 @@ can use my `protoc` knowledge in a GoLang project, a Java project, or a Python p
 
 ## Instructions
 
-Detailed instructions to build and run the server program and client program. (Note: I developed this project on macOS.)
+Detailed instructions to build and run the server program and client program. (Note: I developed this project on macOS
+and using the WebStorm JavaScript IDE).
 
 1. Install Node.js
     * There are a number of ways to do this. I use [nvm](https://github.com/nvm-sh/nvm) to manage my Node.js installations.

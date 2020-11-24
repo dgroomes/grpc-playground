@@ -23,7 +23,7 @@ See [node/README.md](node/README.md).
 
 ### `java/`
 
-NOT YET IMPLEMENTED
+A working example of client- and server-side Java programs that communicate over gRPC.
 
 ## Materials Referenced
 
