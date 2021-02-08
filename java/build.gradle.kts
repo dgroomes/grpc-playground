@@ -4,8 +4,7 @@
 subprojects {
     apply(plugin = "java")
     repositories {
-        mavenLocal()
-        jcenter()
+        mavenCentral()
     }
 }
 
