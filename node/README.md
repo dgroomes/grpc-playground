@@ -15,6 +15,7 @@ and using the WebStorm JavaScript IDE).
 
 1. Install Node.js
     * There are a number of ways to do this. I use [nvm](https://github.com/nvm-sh/nvm) to manage my Node.js installations.
+    * I used Node 14.x
 1. Install `protoc`. This is the Protocol Buffers compiler.
     * Download it via the Protocol Buffers' [GitHub Releases page](https://github.com/protocolbuffers/protobuf/releases).
       For example, [protoc-3.14.0-osx-x86_64.zip](https://github.com/protocolbuffers/protobuf/releases/download/v3.14.0/protoc-3.14.0-osx-x86_64.zip)
