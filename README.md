@@ -19,11 +19,13 @@ The sub-projects include:
 
 A working example of client- and server-side JavaScript (Node.js) programs that communicate over gRPC.
 
-See [node/README.md](node/README.md).
+See the README in [node/](node/).
 
 ### `java/`
 
 A working example of client- and server-side Java programs that communicate over gRPC.
+
+See the README in [java/](java/).
 
 ## Materials Referenced
 

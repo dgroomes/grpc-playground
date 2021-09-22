@@ -13,7 +13,7 @@ JavaScript project, or a Python project!
 Detailed instructions to build and run the server program and client program. (Note: I developed this project on macOS
 and using Intellij).
 
-1. Install Java 15
+1. Install Java 17
     * I use [SDKMAN](https://sdkman.io/) to manage my installations of Java
 1. Install `protoc`. This is the Protocol Buffers compiler.
     * Download it via the Protocol Buffers [GitHub Releases page](https://github.com/protocolbuffers/protobuf/releases).
