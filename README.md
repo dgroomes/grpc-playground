@@ -27,6 +27,13 @@ A working example of client- and server-side Java programs that communicate over
 
 See the README in [java/](java/).
 
+### `go/`
+
+A working example of client- and server-side Go programs that communicate over gRPC.
+
+See the README in [go/](go/).
+
+
 ## Materials Referenced
 
 * [Protobuf official site](https://developers.google.com/protocol-buffers)
@@ -39,3 +46,4 @@ See the README in [java/](java/).
     instructions so I used the GoLang instructions as a working example to figure out how to do the JavaScript one.
 * [gRPC official site: Quick start for GoLang](https://grpc.io/docs/languages/go/quickstart/)
 * [gRPC GitHub issues: a comment indicating how to use the gRPC Node plugin with protoc](https://github.com/grpc/grpc/issues/7650#issuecomment-237894061)
+* [gRPC official site: Quick start for Go](https://grpc.io/docs/languages/go/)
