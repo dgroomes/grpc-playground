@@ -33,8 +33,14 @@ A working example of client- and server-side Go programs that communicate over g
 
 See the README in [go/](go/).
 
+### `swift/`
 
-## Materials Referenced
+A working example of client- and server-side Swift programs that communicate over gRPC.
+
+See the README in [swift/](swift/).
+
+
+## Reference
 
 * [Protobuf official site](https://developers.google.com/protocol-buffers)
 * [Protobuf official site: Language Guide for "proto3"](https://developers.google.com/protocol-buffers/docs/proto3)
