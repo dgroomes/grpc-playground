@@ -1,19 +1,6 @@
 package dgroomes;
 
 import static io.grpc.MethodDescriptor.generateFullMethodName;
-import static io.grpc.stub.ClientCalls.asyncBidiStreamingCall;
-import static io.grpc.stub.ClientCalls.asyncClientStreamingCall;
-import static io.grpc.stub.ClientCalls.asyncServerStreamingCall;
-import static io.grpc.stub.ClientCalls.asyncUnaryCall;
-import static io.grpc.stub.ClientCalls.blockingServerStreamingCall;
-import static io.grpc.stub.ClientCalls.blockingUnaryCall;
-import static io.grpc.stub.ClientCalls.futureUnaryCall;
-import static io.grpc.stub.ServerCalls.asyncBidiStreamingCall;
-import static io.grpc.stub.ServerCalls.asyncClientStreamingCall;
-import static io.grpc.stub.ServerCalls.asyncServerStreamingCall;
-import static io.grpc.stub.ServerCalls.asyncUnaryCall;
-import static io.grpc.stub.ServerCalls.asyncUnimplementedStreamingCall;
-import static io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall;
 
 /**
  * <pre>
@@ -22,8 +9,9 @@ import static io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall;
  * </pre>
  */
 @javax.annotation.Generated(
-    value = "by gRPC proto compiler (version 1.33.1)",
+    value = "by gRPC proto compiler (version 1.55.1)",
     comments = "Source: echo.proto")
+@io.grpc.stub.annotations.GrpcGenerated
 public final class EchoGrpc {
 
   private EchoGrpc() {}
@@ -112,7 +100,7 @@ public final class EchoGrpc {
    * useful to think of this as an interface and not a service.
    * </pre>
    */
-  public static abstract class EchoImplBase implements io.grpc.BindableService {
+  public interface AsyncService {
 
     /**
      * <pre>
@@ -122,31 +110,36 @@ public final class EchoGrpc {
      * actually echoing back the same string.
      * </pre>
      */
-    public void echo(dgroomes.EchoProtos.Message request,
+    default void echo(dgroomes.EchoProtos.Message request,
         io.grpc.stub.StreamObserver<dgroomes.EchoProtos.Message> responseObserver) {
-      asyncUnimplementedUnaryCall(getEchoMethod(), responseObserver);
-    }
-
-    @java.lang.Override public final io.grpc.ServerServiceDefinition bindService() {
-      return io.grpc.ServerServiceDefinition.builder(getServiceDescriptor())
-          .addMethod(
-            getEchoMethod(),
-            asyncUnaryCall(
-              new MethodHandlers<
-                dgroomes.EchoProtos.Message,
-                dgroomes.EchoProtos.Message>(
-                  this, METHODID_ECHO)))
-          .build();
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getEchoMethod(), responseObserver);
     }
   }
 
   /**
+   * Base class for the server implementation of the service Echo.
    * <pre>
    * This is a simple RPC service. It's like an interface declaration in the Protobuf language. In my opinion, it's more
    * useful to think of this as an interface and not a service.
    * </pre>
    */
-  public static final class EchoStub extends io.grpc.stub.AbstractAsyncStub<EchoStub> {
+  public static abstract class EchoImplBase
+      implements io.grpc.BindableService, AsyncService {
+
+    @java.lang.Override public final io.grpc.ServerServiceDefinition bindService() {
+      return EchoGrpc.bindService(this);
+    }
+  }
+
+  /**
+   * A stub to allow clients to do asynchronous rpc calls to service Echo.
+   * <pre>
+   * This is a simple RPC service. It's like an interface declaration in the Protobuf language. In my opinion, it's more
+   * useful to think of this as an interface and not a service.
+   * </pre>
+   */
+  public static final class EchoStub
+      extends io.grpc.stub.AbstractAsyncStub<EchoStub> {
     private EchoStub(
         io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
       super(channel, callOptions);
@@ -168,18 +161,20 @@ public final class EchoGrpc {
      */
     public void echo(dgroomes.EchoProtos.Message request,
         io.grpc.stub.StreamObserver<dgroomes.EchoProtos.Message> responseObserver) {
-      asyncUnaryCall(
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getEchoMethod(), getCallOptions()), request, responseObserver);
     }
   }
 
   /**
+   * A stub to allow clients to do synchronous rpc calls to service Echo.
    * <pre>
    * This is a simple RPC service. It's like an interface declaration in the Protobuf language. In my opinion, it's more
    * useful to think of this as an interface and not a service.
    * </pre>
    */
-  public static final class EchoBlockingStub extends io.grpc.stub.AbstractBlockingStub<EchoBlockingStub> {
+  public static final class EchoBlockingStub
+      extends io.grpc.stub.AbstractBlockingStub<EchoBlockingStub> {
     private EchoBlockingStub(
         io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
       super(channel, callOptions);
@@ -200,18 +195,20 @@ public final class EchoGrpc {
      * </pre>
      */
     public dgroomes.EchoProtos.Message echo(dgroomes.EchoProtos.Message request) {
-      return blockingUnaryCall(
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getEchoMethod(), getCallOptions(), request);
     }
   }
 
   /**
+   * A stub to allow clients to do ListenableFuture-style rpc calls to service Echo.
    * <pre>
    * This is a simple RPC service. It's like an interface declaration in the Protobuf language. In my opinion, it's more
    * useful to think of this as an interface and not a service.
    * </pre>
    */
-  public static final class EchoFutureStub extends io.grpc.stub.AbstractFutureStub<EchoFutureStub> {
+  public static final class EchoFutureStub
+      extends io.grpc.stub.AbstractFutureStub<EchoFutureStub> {
     private EchoFutureStub(
         io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
       super(channel, callOptions);
@@ -233,7 +230,7 @@ public final class EchoGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<dgroomes.EchoProtos.Message> echo(
         dgroomes.EchoProtos.Message request) {
-      return futureUnaryCall(
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getEchoMethod(), getCallOptions()), request);
     }
   }
@@ -245,10 +242,10 @@ public final class EchoGrpc {
       io.grpc.stub.ServerCalls.ServerStreamingMethod<Req, Resp>,
       io.grpc.stub.ServerCalls.ClientStreamingMethod<Req, Resp>,
       io.grpc.stub.ServerCalls.BidiStreamingMethod<Req, Resp> {
-    private final EchoImplBase serviceImpl;
+    private final AsyncService serviceImpl;
     private final int methodId;
 
-    MethodHandlers(EchoImplBase serviceImpl, int methodId) {
+    MethodHandlers(AsyncService serviceImpl, int methodId) {
       this.serviceImpl = serviceImpl;
       this.methodId = methodId;
     }
@@ -275,6 +272,18 @@ public final class EchoGrpc {
           throw new AssertionError();
       }
     }
+  }
+
+  public static final io.grpc.ServerServiceDefinition bindService(AsyncService service) {
+    return io.grpc.ServerServiceDefinition.builder(getServiceDescriptor())
+        .addMethod(
+          getEchoMethod(),
+          io.grpc.stub.ServerCalls.asyncUnaryCall(
+            new MethodHandlers<
+              dgroomes.EchoProtos.Message,
+              dgroomes.EchoProtos.Message>(
+                service, METHODID_ECHO)))
+        .build();
   }
 
   private static abstract class EchoBaseDescriptorSupplier

@@ -6,14 +6,15 @@
 >
 > -- <cite>https://grpc.io/</cite>
 
-## Standalone sub-projects
 
-This repository illustrates different concepts, patterns and examples via standalone sub-projects. Each sub-project is
-completely independent of the others and do not depend on the root project. This _standalone sub-project constraint_
-forces the sub-projects to be complete and maximizes the reader's chances of successfully running, understanding, and
+## Standalone subprojects
+
+This repository illustrates different concepts, patterns and examples via standalone subprojects. Each subproject is
+completely independent of the others and do not depend on the root project. This _standalone subproject constraint_
+forces the subprojects to be complete and maximizes the reader's chances of successfully running, understanding, and
 re-using the code.
 
-The sub-projects include:
+The subprojects include:
 
 ### `node/`
 
@@ -38,6 +39,13 @@ See the README in [go/](go/).
 A working example of client- and server-side Swift programs that communicate over gRPC.
 
 See the README in [swift/](swift/).
+
+
+## Protobuf: Impressions
+
+Protobuf is well-maintained and feature-rich. One thing that often confuses me, especially because I become newly
+acquainted with Protobuf every year or so, is the [versioning strategy](https://protobuf.dev/support/version-support/).
+Read the docs!
 
 
 ## Reference

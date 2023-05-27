@@ -2,7 +2,7 @@ plugins {
     `java-library`
 }
 
-val grpcVersion = "1.33.1"
+val grpcVersion = "1.55.1" // gRPC Java releases: https://github.com/grpc/grpc-java/releases
 
 dependencies {
     /*
