@@ -2,8 +2,7 @@
 
 A working example of client- and server-side Go programs that communicate over gRPC.
 
-This was inspired from
-the [official "helloworld" gRPC example for Go](https://github.com/grpc/grpc-go/tree/master/examples).
+This was inspired from the [official "helloworld" gRPC example for Go](https://github.com/grpc/grpc-go/tree/master/examples).
 
 
 ## Instructions
@@ -19,8 +18,8 @@ Follow these instructions to do the Protobuf code gen, and build and run a serve
       > Install the protocol compiler plugins for Go using the following commands:
       >
       > ```
-      > go install google.golang.org/protobuf/cmd/protoc-gen-go@v1.26
-      > go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@v1.1
+      > go install google.golang.org/protobuf/cmd/protoc-gen-go@v1.28
+      > go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@v1.2
       > ```
     * Just like any Go binary you install with `go install`, these binaries will be in the `bin/` directory of your Go
       workspace. By convention, the workspace is usually described by the environment variable `GOPATH`. Make sure the
@@ -61,3 +60,11 @@ Follow these instructions to do the Protobuf code gen, and build and run a serve
 
 I'm still very early on my Go learning. I don't understand the generated code. There are some peculiarities. It looks
 like there is a lot of explanation in this [GH issue discussion](https://github.com/grpc/grpc-go/issues/3794). 
+
+
+# Wish List
+
+General clean-ups, TODOs and things I wish to implement for this project: 
+
+* [x] DONE (my main learning is that the module name given by go.mod becomes part of the Go import path) Figure out how to codegen the package name to be "rpc". Right now, it's generating as "main" and I'm changing it
+  by hand to "rpc".

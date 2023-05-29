@@ -3,7 +3,7 @@ syntax = "proto3";
 /*
  * Options specific to Go code generation:
  */
-option go_package = "dgroomes/main";
+option go_package = "rpc/rpc";
 
 /*
  * This is like a type declaration in the Protobuf language.
