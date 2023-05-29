@@ -91,7 +91,7 @@ Follow these instructions to build and run the server program and client program
 
 General clean-ups, TODOs and things I wish to implement for this project:
 
-* Extend the example to something more complex than an echo server. Have a complex type.
-* Why do we need the 'org.apache.tomcat:annotations-api' dependency? Having to specify this dependency and a version for
+* [ ] Extend the example to something more complex than an echo server. Have a complex type.
+* [ ] Why do we need the 'org.apache.tomcat:annotations-api' dependency? Having to specify this dependency and a version for
   this dependency makes gRPC a leakier abstraction (bad).
-* Clean up and flesh out the individual subproject READMEs?
+* [ ] Use a Gradle version catalog with TOML 
