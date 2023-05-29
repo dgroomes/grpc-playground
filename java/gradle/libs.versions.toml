@@ -1,0 +1,11 @@
+[versions]
+# gRPC Java releases: https://github.com/grpc/grpc-java/releases
+grpc = "1.55.1"
+# Make sure to match the version of the gRPC Java library
+tomcat-annotations = "6.0.53"
+
+[libraries]
+grpc-stub = { module = "io.grpc:grpc-stub", version.ref = "grpc" }
+grpc-protobuf = { module = "io.grpc:grpc-protobuf", version.ref = "grpc" }
+grpc-netty = { module = "io.grpc:grpc-netty-shaded", version.ref = "grpc" }
+tomcat-annotations = { module = "org.apache.tomcat:annotations-api", version.ref = "tomcat-annotations" }
