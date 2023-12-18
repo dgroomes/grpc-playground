@@ -7,7 +7,7 @@
     "url": "git+https://github.com/dgroomes/grpc-playground.git"
   },
   "dependencies": {
-    "google-protobuf": "^3.14.0",
-    "@grpc/grpc-js": "^1.2.1"
+    "google-protobuf": "^3.21.2",
+    "@grpc/grpc-js": "^1.9.13"
   }
 }

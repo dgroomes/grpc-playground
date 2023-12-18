@@ -9,6 +9,7 @@
 # "grpc-js" is the replacement for "grpc". See the announcement blog post https://grpc.io/blog/grpc-js-1.0/
 
 dst_dir=src/generated
+mkdir -p "$dst_dir"
 
 protoc \
   --plugin=protoc-gen-grpc=$(which grpc_node_plugin) \
