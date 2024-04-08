@@ -3,7 +3,7 @@
 A working example of client- and server-side Java programs that communicate over gRPC.
 
 
-## Description
+## Overview
 
 This was inspired from the [official "helloworld" gRPC example for Java](https://github.com/grpc/grpc-java/tree/master/examples)
 but significantly diverges because it uses the `protoc` compiler plugin extension mechanism directly instead of using
@@ -18,7 +18,8 @@ JavaScript project, or a Python project!
 
 Follow these instructions to build and run the server program and client program:
 
-1. Use Java 17
+1. Pre-requisite: Java
+    * I used Java 21
     * I use [SDKMAN](https://sdkman.io/) to manage my installations of Java
 2. Install `protoc`. This is the Protocol Buffers compiler.
     * Download it via the Protocol Buffers [GitHub Releases page](https://github.com/protocolbuffers/protobuf/releases).
@@ -95,3 +96,4 @@ General clean-ups, TODOs and things I wish to implement for this project:
 * [ ] Why do we need the 'org.apache.tomcat:annotations-api' dependency? Having to specify this dependency and a version for
   this dependency makes gRPC a leakier abstraction (bad).
 * [x] DONE Use a Gradle version catalog with TOML 
+* [ ] Keep an eye on [Helidon's gRPC implementation](https://helidon.io/docs/v1/grpc/01_introduction).
